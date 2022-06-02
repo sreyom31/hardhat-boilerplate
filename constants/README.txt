@@ -1,0 +1,1 @@
+Json abi for frontend will be stored here after testnet deployment.

@@ -1,0 +1,34 @@
+{
+  "name": "hardhat_boilerplate",
+  "version": "1.0.0",
+  "description": "Boilerplate for Hardhat",
+  "main": "index.js",
+  "scripts": {
+    "compile": "npx hardhat compile",
+    "test": "HARDHAT_NETWORK=hardhat npx hardhat test",
+    "deploy": "HARDHAT_NETWORK=hardhat npx hardhat run scripts/deploy.script.js",
+    "localhost": "npx hardhat node",
+    "test-localhost": "HARDHAT_NETWORK=localhost npx hardhat test",
+    "deploy-localhost": "HARDHAT_NETWORK=localhost npx hardhat run scripts/deploy.script.js",
+    "deploy-testnet": "HARDHAT_NETWORK=bsctestnet VERIFY=verify npx hardhat run scripts/deploy.script.js",
+    "deploy-dev": "VERIFY=verify npx hardhat run scripts/deploy.script.js"
+  },
+  "keywords": ["hardhat","boilerplate","blockchain"],
+  "author": "Sreyom Sresaan (https://github.com/sreyom31/)",
+  "license": "ISC",
+  "devDependencies": {
+    "@nomiclabs/hardhat-ethers": "^2.0.5",
+    "@nomiclabs/hardhat-etherscan": "^2.1.5",
+    "@nomiclabs/hardhat-waffle": "^2.0.3",
+    "@openzeppelin/contracts": "^3.4.0",
+    "@openzeppelin/hardhat-upgrades": "^1.6.0",
+    "chai": "^4.3.6",
+    "chalk": "^4.1.1",
+    "dotenv": "^8.2.0",
+    "ethereum-waffle": "^3.3.0",
+    "ethers": "^5.6.2",
+    "fs": "^0.0.1-security",
+    "hardhat": "^2.9.3",
+    "waffle": "^0.0.4"
+  }
+}
