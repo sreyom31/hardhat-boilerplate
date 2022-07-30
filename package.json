@@ -13,9 +13,12 @@
     "deploy-testnet": "HARDHAT_NETWORK=bsctestnet VERIFY=verify npx hardhat run scripts/deploy.script.js",
     "deploy-dev": "VERIFY=verify npx hardhat run scripts/deploy.script.js"
   },
-  "keywords": ["hardhat","boilerplate","blockchain"],
-  "author": "Sreyom Sresaan (https://github.com/sreyom31/)",
-  "license": "ISC",
+  "keywords": [
+    "hardhat",
+    "boilerplate",
+    "blockchain"
+  ],
+  "license": "MIT",
   "devDependencies": {
     "@nomiclabs/hardhat-ethers": "^2.0.5",
     "@nomiclabs/hardhat-etherscan": "^2.1.5",
@@ -30,5 +33,8 @@
     "fs": "^0.0.1-security",
     "hardhat": "^2.9.3",
     "waffle": "^0.0.4"
-  }
+  },
+  "repository": "git@github.com:sreyom31/hardhat-boilerplate.git",
+  "author": "sreyom31 <sreyom31@gmail.com>",
+  "private": false
 }
